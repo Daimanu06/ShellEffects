@@ -11,6 +11,7 @@ int main(int, char**) {
 	std::cout << sh::Format().fg(sh::Color::Green).text("Green").rall().text("White") << std::endl;
 	std::cout << sh::Format().underline().text("U").rblink().text("U").runderline().text("N") << std::endl;
 	std::cout << sh::Format().underline().bold().fg(sh::Color::LightBlue).text("U&B") << std::endl;
+	std::cout << sh::Format().underline().hide().blink().bg(sh::Color::LightBlue).text("U&B") << std::endl;
 
 	return 0;
 }
